@@ -5,11 +5,42 @@
 
 <Header />
 
-<main>
+<main class="home">
   <section class="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I am Ak Bitu, a digital artist and computing interective digital art and design student.</p>
-    <button>View My Projects</button>
+    <div class="hero-text">
+      <h1>Hi, I'm Ak Bitu</h1>
+      <p>Digital Artist and Computing in Interactive Digital Art and Design</p>
+
+      <div class="buttons">
+        <button>View Portfolio</button>
+        <button class="secondary">Download CV</button>
+      </div>
+    </div>
+
+<div class="hero-image">
+      <img src="https://via.placeholder.com/400x250" alt="Artwork" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Feature Work</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Animation</h3>
+        <p>Motion and 2D Animations</p>
+      </div>
+
+      <div class="card">
+        <h3>Environment</h3>
+        <p>Background and Environment Design</p>
+      </div>
+
+      <div class="card">
+        <h3>3D Art</h3>
+        <p>Blender and Maya Projects</p>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -19,31 +50,60 @@
   :global(body) {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f8f5f2;
   }
 
   .hero {
-    text-align: center;
-    padding: 100px 20px;
+    display:flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 60px;
+  }
+  .hero-text {
+    max-width:500px;
   }
 
-  h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
+  h1 {
+    font-size:48px;
   }
+ .secondary {
+  background: white;
+  border:1px solid #58c7c2;
+ }
+ .hero-image img {
+  width:400px;
+  border-radius:10px;
+ }
+ .features {
+  padding:40px;
+  text-align:center;
+ }
+ .cards {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
 
-  p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
+ }
+ .card {
+  background:white;
+  padding:20px;
+  width: 220px;
+  border-radius:10px;
+ }
+ .buttons {
+  margin-top:20px;
+ }
 
   button {
-    background: #222;
-    color: white;
+
+    background: #58c7c2;
+    margin-right: 10px;
     border: none;
-    padding: 15px 30px;
+    padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 8px;
+    border:none;
+    border-radius: 20px;
   }
 </style>
