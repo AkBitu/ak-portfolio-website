@@ -50,7 +50,7 @@
   :global(body) {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f8f5f2;
+    background: #fae1e7;
   }
 
   .hero {
@@ -86,7 +86,7 @@
 
  }
  .card {
-  background:white;
+  background:#aaecd2;
   padding:20px;
   width: 220px;
   border-radius:10px;

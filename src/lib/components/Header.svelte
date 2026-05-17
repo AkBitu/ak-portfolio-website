@@ -9,10 +9,14 @@
 
 <style>
     header {
-        background: #222;
+        background:#4aac93;
         color: white;
         padding: 20px;
         text-align: center;
+
+    }
+    h1 {
+        color: rgb(255, 255, 255);
 
     }
 
