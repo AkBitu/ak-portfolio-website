@@ -50,15 +50,19 @@
   :global(body) {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fae1e7;
+    background:#fae1f9;
+    
   }
 
   .hero {
     display:flex;
     justify-content: space-between;
-
     align-items: center;
-    padding: 60px;
+    padding: 40px;
+    background: #c5a8bf;
+    border-radius: 30px;
+    max-width: 1200px;
+    margin: 40px;
   }
   .hero-text {
     max-width:500px;
