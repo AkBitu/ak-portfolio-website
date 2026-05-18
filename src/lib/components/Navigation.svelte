@@ -1,11 +1,13 @@
-
+<script>
+let path =window.location.pathname;
+</script>
 <nav>
-  <a href="about">ABOUT ME</a>
+  <a href="/about" class:active={path === '/about'}>ABOUT ME</a>
   <a href="traditional">TRADITIONAL PORTFOLIO</a>
 
-  <div class="logo">
+  <a href="/" class="logo">
     <img src="/logo.png" alt="logo">
-  </div>
+  </a>
 
   <a href="digital">DIGITAL PORTFOLIO</a>
   <a href="cv">CV</a>
@@ -47,6 +49,14 @@
      inset 0 -2px 3px rgba(255,255,255,0.35);
      border:1px solid rgba(255,255,255,0.55);
     color: #3a2a50;
+  }
+  a.active {
+    background: rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow:inset 0 2px 8px rgba(255,255,255,0.5),
+    0 4px 12px rgba(0,0,0,0.15);
+    color:#222;
+    transform:  scale(1.08);
   }
 
   .logo img {
