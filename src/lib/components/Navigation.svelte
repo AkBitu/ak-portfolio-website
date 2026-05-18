@@ -3,7 +3,7 @@ let path =window.location.pathname;
 </script>
 <nav>
   <a href="/about" class:active={path === '/about'}>ABOUT ME</a>
-  <a href="traditional">TRADITIONAL PORTFOLIO</a>
+  <a href="traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
 
   <a href="/" class="logo">
     <img src="/logo.png" alt="logo">
