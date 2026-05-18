@@ -1,18 +1,71 @@
 <script>
+import { onMount } from 'svelte';
   import Header from './lib/components/Header.svelte';
   import Footer from './lib/components/Footer.svelte';
+
+  let currentSlide = 0;
+
+  const slides = [
+      { title: "Hi, I’m Ak Bitu",
+      subtitle: "Digital Artist & Computing Student",
+      text: "I create animations, digital paintings, 3D artwork and interactive creative projects while studying Computing in Digital Art & Design at SETU.",
+      image: "/banner_1.jpg"
+    },
+    {
+      title: "Games Fleadh Project",
+      subtitle: "Creative Game Development",
+      text: "Developed an interactive student game project showcasing creativity and storytelling.",
+      image: "/gamefleadh.jpeg"
+    },
+    {
+      title: "Google Scholarship Recipient",
+      subtitle: "Technology Learning Achievement",
+      text: "Recognised for commitment to technology learning and digital skills development.",
+      image: "/google.jpg"
+    },
+    {
+      title: "Exhibiting Artist",
+      subtitle: "Barrow Valley Art Group",
+      text: "Participated in public exhibitions presenting traditional artwork.",
+      image: "/exhibition.jpg"
+    }
+  ];
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  }
+
+  onMount(() => {
+    const interval = setInterval(nextSlide, 4000);
+    return () => clearInterval(interval);
+  });
+
 </script>
 
 <Header />
 
 <main class="home">
   <section class="hero">
+  <button class="arrow" on:click={previousSlide}>&lt;</button>
+  
+  
+
+
     <div class="hero-text">
-      <h1><span>Hi, I'm</span> Ak Bitu</h1>
+    <h1>{slides[currentSlide].title}</h1>
+<p>{slides[currentSlide].subtitle}</p>
+<small>{slides[currentSlide].text}</small>
+
+      <!--<h1><span>Hi, I'm</span> Ak Bitu</h1>
       <p>Digital Artist & Student</p>
       <small> I create animation, vibrant paintings and 3D artwork. 3rd Year Computing in Digital Art & Design at SETU.
 
       </small>
+    -->
     
       <div class="buttons">
         <button>View Portfolio</button>
@@ -22,8 +75,10 @@
     
 
 <div class="banner-image">
-      <img src="/banner_1.jpg" alt="Artwork" />
+      <img src={slides[currentSlide].image} alt={slides[currentSlide].title}>
     </div>
+<button class="arrow" on:click={nextSlide}>&gt;</button> 
+  
   </section>
 
   <section class="features">
@@ -152,6 +207,13 @@
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
+  transition:all 0.3s ease;
+  cursor:pointer
+
+ }
+ .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
  }
  .card-images{
   display: flex;
@@ -207,6 +269,32 @@ object-fit: cover;
       background: #26f8ee;
       color:black
     }
+    .buttons button:first-child:hover {
+  background: linear-gradient(
+    135deg,
+    #37f7d8,
+    #2dcfff
+  );
+
+  transform: translateY(-3px) scale(1.08);
+
+  box-shadow:
+    0 16px 28px rgba(50, 220, 220, 0.45),
+    inset 0 2px 2px rgba(255,255,255,0.9);
+}
+.secondary:hover {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f2e8ff
+  );
+
+  transform: translateY(-3px) scale(1.08);
+
+  box-shadow:
+    0 16px 28px rgba(170, 140, 220, 0.25),
+    inset 0 2px 2px rgba(255,255,255,1);
+}
     .secondary {
   background: rgb(255, 255, 255);
   border:1px solid #58c7c2;

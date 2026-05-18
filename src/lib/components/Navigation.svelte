@@ -25,31 +25,57 @@
 
   a {
     text-decoration: none;
-    background: #f7d6f5;
-    padding: 3px 14px;
+    background: rgba(241, 185, 238, 0.87);
+    font-weight: bold;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border:1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12), inset 0 1px 1px rgba(255,255,255,0.8);
+    padding: 6px 18px;
+    transition: all 0.35s ease;
     border-radius: 12px;
     color: black;
     font-size: 13px;
     font-weight: bold;
   }
 
-  .logo img {
-    width: 140px;
-    height:80px;
-    object-fit: cover;
-    border-radius: 16px;
+  a:hover {
+    transform: translateY(-3px) scale(1.04);
+    background: rgba(255, 255, 255, 0.493);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18),
+     inset 0 -2px 3px rgba(255,255,255,0.35);
+     border:1px solid rgba(255,255,255,0.55);
+    color: #3a2a50;
   }
+
+  .logo img {
+    width: 130px;
+    height:auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: all 0.35s ease;
+  }
+
   .logo {
-    width: 140px;
-    height: 80px;
-    background: #9feff0;
-    border:3px solid rgb(28, 43, 46);
-    border-radius: 18px;
-    padding: 0px;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 6px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.45);
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.15),
+    inset 0 2px 2px rgba(255,255,255,0.9),
+    inset 0 -2px 4px rgba(255,255,255,0.15);
+    transition:all 0.35s ease;
   }
   .contact-btn{
     background:#857b84;
