@@ -9,7 +9,7 @@
 
   <a href="digital">DIGITAL PORTFOLIO</a>
   <a href="cv">CV</a>
-  <a href="contact">CONTACT</a>
+  <a href="contact" class="contact-btn">CONTACT</a>
 </nav>
 
 <style>
@@ -50,6 +50,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .contact-btn{
+    background:#857b84;
+    color: white;
   }
 
 </style>
