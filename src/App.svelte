@@ -17,8 +17,8 @@
       </div>
     </div>
 
-<div class="hero-image">
-      <img src="https://via.placeholder.com/400x250" alt="Artwork" />
+<div class="banner-image">
+      <img src="/banner_1.jpg" alt="Artwork" />
     </div>
   </section>
 
@@ -58,7 +58,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 15px;
     background: #c5a8bf;
     border-radius: 30px;
     max-width: 1200px;
@@ -66,6 +66,9 @@
   }
   .hero-text {
     max-width:500px;
+    
+
+
   }
 
   h1 {
@@ -75,9 +78,11 @@
   background: white;
   border:1px solid #58c7c2;
  }
- .hero-image img {
+ .banner-image img {
   width:400px;
-  border-radius:10px;
+  height: 220px;
+  object-fit: cover;
+  border-radius:15px;
  }
  .features {
   padding:40px;
