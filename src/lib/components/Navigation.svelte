@@ -10,8 +10,7 @@ let path =window.location.pathname;
   </a>
 
  <a href="digital" class:active={path === '/digital'}>DIGITAL PORTFOLIO</a>
-  
-  <a href="cv">CV</a>
+  <a href="cv" class:active={path === '/cv'}>CV</a>
   <a href="contact" class="contact-btn">CONTACT</a>
 </nav>
 

@@ -3,6 +3,7 @@ import Home from './routes/+page.svelte';
 import About from './routes/about/+page.svelte';
 import Traditional from './routes/traditional/+page.svelte';
 import Digital from './routes/digital/+page.svelte';
+import Cv from './routes/cv/+page.svelte';
 
 let path = window.location.pathname;
 </script>
@@ -13,6 +14,8 @@ let path = window.location.pathname;
 <Traditional />
 {:else if path == '/digital'}
   <Digital />
+{:else if path == '/cv'}
+  <Cv />
 {:else}
 <Home />
 {/if}

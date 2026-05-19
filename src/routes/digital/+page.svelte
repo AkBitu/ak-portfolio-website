@@ -3,10 +3,22 @@
   import Footer from '../../lib/components/Footer.svelte';
 
   const works = [
-    { title: "Animation", text: "Motion & 2D Animations", image: "/animation_1.gif" },
-    { title: "Environment", text: "Background and Environment", image: "/environment.png" },
-    { title: "3D Art", text: "Blender & Maya 3D", image: "/3d.jpg" },
-    { title: "Games Fleadh", text: "SITLab 0023 Project", image: "/gamefleadh.jpeg" }
+    { title: "Animation",
+      text: "Motion & 2D Animations", 
+      image: "/animation_1.gif" 
+    },
+    { title: "Environment", 
+      text: "Background and Environment", 
+      image: "/environment.png" 
+    },
+    { title: "3D Art",
+      text: "Blender & Maya 3D", 
+      image: "/3d.jpg" 
+    },
+    { title: "Games Fleadh",
+     text: "SITLab 0023 Project",
+      image: "/gamefleadh.jpeg" 
+    }
   ];
 </script>
 
