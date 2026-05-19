@@ -6,7 +6,7 @@ import Digital from './routes/digital/+page.svelte';
 import Cv from './routes/cv/+page.svelte';
 import Contact from './routes/contact/+page.svelte';
 
-let path = window.location.pathname;
+let path = window.location.pathname.replace('/ak-portfolio-website','') || '/';
 </script>
 
 {#if path == '/about'}
