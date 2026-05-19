@@ -5,19 +5,19 @@
   const works = [
     { title: "Animation",
       text: "Motion & 2D Animations", 
-      image: "/animation_1.gif" 
+      image: "/ak-portfolio-website/animation_1.gif" 
     },
     { title: "Environment", 
       text: "Background and Environment", 
-      image: "/environment.png" 
+      image: "/ak-portfolio-website/environment.png" 
     },
     { title: "3D Art",
       text: "Blender & Maya 3D", 
-      image: "/3d.jpg" 
+      image: "/ak-portfolio-website/3d.jpg" 
     },
     { title: "Games Fleadh",
      text: "SITLab 0023 Project",
-      image: "/gamefleadh.jpeg" 
+      image: "/ak-portfolio-website/gamefleadh.jpeg" 
     }
   ];
 </script>

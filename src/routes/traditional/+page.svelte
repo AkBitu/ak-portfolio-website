@@ -5,15 +5,15 @@
   const works = [
     {
       title: "Drawings",
-      image: "/drawing.jpg"
+      image: "/ak-portfolio-website/drawing.jpg"
     },
     {
       title: "Paintings",
-      image: "/paintings.jpg"
+      image: "/ak-portfolio-website/paintings.jpg"
     },
     {
       title: "Exhibitions",
-      image: "/exhibition.jpg"
+      image: "/ak-portfolio-website/exhibition.jpg"
     }
   ];
 </script>

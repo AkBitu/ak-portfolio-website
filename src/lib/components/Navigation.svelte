@@ -10,16 +10,16 @@ let menuOpen = false;
 
 <!--main navigation links-->
 <nav class:show={menuOpen}> 
-  <a href="/ak-portfolio-website/about" class:active={path === '/about'}>ABOUT ME</a>
-  <a href="/ak-portfolio-website/traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
+  <a href="#/about" class:active={path === '/about'}>ABOUT ME</a>
+  <a href="#/traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
   
-  <a href="/ak-portfolio-website/" class="logo">
+  <a href="#/" class="logo">
     <img src="/ak-portfolio-website/logo.png" alt="Ak Bitu Portfolio logo">
   </a>
 
- <a href="/ak-portfolio-website/digital" class:active={path === '/digital'}>DIGITAL PORTFOLIO</a>
-  <a href="/ak-portfolio-website/cv" class:active={path === '/cv'}>CV</a>
-  <a href="/ak-portfolio-website/contact" class:active={path === '/contact'}>CONTACT</a>
+ <a href="#/digital" class:active={path === '/digital'}>DIGITAL PORTFOLIO</a>
+  <a href="#/cv" class:active={path === '/cv'}>CV</a>
+  <a href="#/contact" class:active={path === '/contact'}>CONTACT</a>
 </nav>
 
 <style>

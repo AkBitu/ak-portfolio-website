@@ -10,7 +10,7 @@
  <div class="cv-box">
  <!--profile summery card-->
    <div class="profile-card">
-     <img src="/profile.jpg" alt="Ak Bitu profile pic">
+     <img src="/ak-portfolio-website/profile.jpg" alt="Ak Bitu profile pic">
       <h2> <b> Ak Bitu </b></h2>
       <p><b> Digital Artist & Visual Design </b></p>
       <small>
@@ -25,13 +25,13 @@
 
       <div class="cv-grid">
         <div class="education">
-          <h3><img class="icon" src="/icon/education.png" alt="Education icon"> 
+          <h3><img class="icon" src="/ak-portfolio-website/icon/education.png" alt="Education icon"> 
             Education </h3>
           <p><b>2023 - Present</b><br />BSc Computing in Interactive Digital Art & Design</p>
           <p><b>2021 - 2022</b><br />Certificate Applied Digital Marketing</p>
         
         <div class="skills">
-          <h3><img class="icon" src="/icon/skills.png" alt="skills symbol">Skills</h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/skills.png" alt="skills symbol">Skills</h3>
           <ul>
             <li>Animation & Spine</li>
             <li>Concept Art</li>
@@ -43,24 +43,24 @@
         </div>
 
         <div class="experience">
-          <h3><img class="icon" src="/icon/work2.png" alt="work experience icon"> Experience</h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/work2.png" alt="work experience icon"> Experience</h3>
           <p><b>Game Project</b><br />Best Game Award Winner, Games Fleadh 2026</p>
           <p><b>Art Exhibition Participant</b><br />Barrow Valley Artist Group</p>
           <p><b>Freelance Logo Designer</b><br />Client work</p>
 
-          <h3><img class="icon" src="/icon/interest.png" alt="heart icon">Interests</h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/interest.png" alt="heart icon">Interests</h3>
           <div class="interests">
-          <h3><img class="icon" src="/icon/draw.png" alt="Sketching icon"></h3>
-          <h3><img class="icon" src="/icon/animator.png" alt="animation icon"></h3>
-          <h3><img class="icon" src="/icon/3D.png" alt="threeD icon"></h3>
-          <h3><img class="icon" src="/icon/color.png" alt="painting icon"></h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/draw.png" alt="Sketching icon"></h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/animator.png" alt="animation icon"></h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/3D.png" alt="threeD icon"></h3>
+          <h3><img class="icon" src="/ak-portfolio-website/icon/color.png" alt="painting icon"></h3>
             
           </div>
         </div>
       </div>
       
       <div class="summary">
-      <h3><img class="icon" src="/icon/aa.png" alt="comment icon"></h3>
+      <h3><img class="icon" src="/ak-portfolio-website/icon/aa.png" alt="comment icon"></h3>
         Creative digital artist and design student with skills in animation, 3D design, and visual storytelling.
         Strong interest in game art, 2D/3D design and freelance logo design.
       </div>

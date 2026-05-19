@@ -9,23 +9,23 @@
   <div class="about-box">
   <!--profile image and social links-->
     <div class="left">
-      <img class="profile" src="/exhibition.jpg" alt="Ak Bitu exhibition " />
+      <img class="profile" src="/ak-portfolio-website/exhibition.jpg" alt="Ak Bitu exhibition " />
 
       <div class="icons">
         <a href="mailto:akbitu20@gmail.com">
-          <img src="/icon/email.png" alt="Email icon link">
+          <img src="/ak-portfolio-website/icon/email.png" alt="Email icon link">
         </a>
         <a href="https://linkedin.com/in/ak-bitu-444466253">
-          <img src="/icon/linkdin.png" alt="linkedin icon link" >
+          <img src="/ak-portfolio-website/icon/linkdin.png" alt="linkedin icon link" >
         </a>
         <a href="https://www.instagram.com/bitusartcreation" >
-          <img src="/icon/insta.png" alt="Intagram link">
+          <img src="/ak-portfolio-website/icon/insta.png" alt="Intagram link">
         </a>
         <a href="https://discord.com/users/1284253232775827509">
-        <img src="icon/discord.png" alt="Discord link">
+        <img src="/ak-portfolio-website/icon/discord.png" alt="Discord link">
       </a>
         <a href="https://github.com/AkBitu">
-        <img src="/icon/github2.png" alt="Github link"> 
+        <img src="/ak-portfolio-website/icon/github2.png" alt="Github link"> 
       </a>
       </div>
 

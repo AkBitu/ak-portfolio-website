@@ -10,25 +10,25 @@ import { onMount } from 'svelte';
       { title: "Hi, I’m Ak Bitu",
       subtitle: "Digital Artist & Computing Student",
       text: "I create animations, digital paintings, 3D artwork and interactive creative projects while studying Computing in Digital Art & Design at SETU.",
-      image: "/banner_1.jpg"
+      image: "/ak-portfolio-website/banner_1.jpg"
     },
     {
       title: "Games Fleadh Project",
       subtitle: "Creative Game Development",
       text: "Developed an interactive student game project showcasing creativity and storytelling.",
-      image: "/gamefleadh.jpeg"
+      image: "/ak-portfolio-website/gamefleadh.jpeg"
     },
     {
       title: "Google Scholarship Recipient",
       subtitle: "Technology Learning Achievement",
       text: "Recognised for commitment to technology learning and digital skills development.",
-      image: "/google.jpg"
+      image: "/ak-portfolio-website/google.jpg"
     },
     {
       title: "Exhibiting Artist",
       subtitle: "Barrow Valley Art Group",
       text: "Participated in public exhibitions presenting traditional artwork.",
-      image: "/exhibition.jpg"
+      image: "/ak-portfolio-website/exhibition.jpg"
     }
   ];
 
@@ -90,8 +90,8 @@ import { onMount } from 'svelte';
 
       <div class="card">
       <div class="card-images two-images">
-      <img src="/animation_1.gif" alt="Animation 1 gif">
-      <img src="/animation_2.jpg" alt="Animation 2 concept">
+      <img src="/ak-portfolio-website/animation_1.gif" alt="Animation 1 gif">
+      <img src="/ak-portfolio-website/animation_2.jpg" alt="Animation 2 concept">
       </div>
 
       <div class="card-content">
@@ -102,7 +102,7 @@ import { onMount } from 'svelte';
 
       <div class="card">
        <div class="card-images">
-      <img src="/environment.png" alt="environment artwork">
+      <img src="/ak-portfolio-website/environment.png" alt="environment artwork">
        </div>
       <div class="card-content">
         <h3>Environment</h3>
@@ -112,7 +112,7 @@ import { onMount } from 'svelte';
 
       <div class="card">
       <div class="card-images">
-      <img src="/3d.jpg" alt="3d artwork">
+      <img src="/ak-portfolio-website/3d.jpg" alt="3d artwork">
        </div>
   
       <div class="card-content">
