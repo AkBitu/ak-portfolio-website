@@ -8,23 +8,23 @@
 <section class="about-page">
   <div class="about-box">
     <div class="left">
-      <img class="profile" src="/exhibition.jpg" alt="Ak Bitu exhibition" />
+      <img class="profile" src="/exhibition.jpg" alt="Ak Bitu exhibition " />
 
       <div class="icons">
         <a href="mailto:akbitu20@gmail.com">
-          <img src="/icon/email.png" alt="Email">
+          <img src="/icon/email.png" alt="Email icon link">
         </a>
         <a href="https://linkedin.com/in/ak-bitu-444466253">
-          <img src="/icon/linkdin.png" alt="linkedin" >
+          <img src="/icon/linkdin.png" alt="linkedin icon link" >
         </a>
         <a href="https://www.instagram.com/bitusartcreation" >
-          <img src="/icon/insta.png" alt="Intagram">
+          <img src="/icon/insta.png" alt="Intagram link">
         </a>
         <a href="https://discord.com/users/1284253232775827509">
-        <img src="icon/discord.png" alt="Discord">
+        <img src="icon/discord.png" alt="Discord link">
       </a>
         <a href="https://github.com/AkBitu">
-        <img src="/icon/github2.png" alt="Github"> 
+        <img src="/icon/github2.png" alt="Github link"> 
       </a>
       </div>
 
@@ -117,15 +117,26 @@
   .icons img{
     height: 24px;
     width:24px;
+    transition: 0.3s;
+    cursor: pointer;
   }
-
+ .icons img:hover {
+  transform: scale(1.15);
+ }
   .icons a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     color: black;
   }
-
+button {
+  transition: 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background: #379f84;
+  transform: scale(1.05);
+}
   .cv {
     padding: 10px 18px;
     border-radius: 12px;

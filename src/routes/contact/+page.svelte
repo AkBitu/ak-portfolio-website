@@ -9,7 +9,7 @@
   <div class="contact-box">
 
     <div class="profile-card">
-      <img src="/profile.jpg" alt="Ak Bitu" />
+      <img src="/profile.jpg" alt="Ak Bitu profile pic" />
       <h2>Ak Bitu</h2>
       <p>Digital Artist & Visual Design</p>
       <small>Digital artist and design student passionate about animation, 3D art and creative visual storytelling.</small>
@@ -17,10 +17,10 @@
       <p class="info">📧 c00313310@setu.ie<br>📞 +353000000000</p>
 
       <div class="icons">
-        <img src="/icon/linkdin.png"  alt="linkdin"/>
-        <img src="/icon/insta.png" alt="instagram" />
-        <img src="/icon/discord.png" alt="discord" />
-        <img src="/icon/github2.png" alt="github "/>
+        <img src="/icon/linkdin.png"  alt="linkdin link"/>
+        <img src="/icon/insta.png" alt="instagram link" />
+        <img src="/icon/discord.png" alt="discord link" />
+        <img src="/icon/github2.png" alt="github link "/>
       </div>
 
       <button>✉️ Say Hello</button>
@@ -33,7 +33,7 @@
         Fill out the form and I'll get back to you as soon as possible.
       </p>
     
-      <h3> <img src="/icon/map.png" alt="map"> Find me Here</h3>
+      <h3> <img src="/icon/map.png" alt="map icon"> Find me Here</h3>
       <iframe class="map" src="https://www.google.com/maps?q=SETU%20Carlow&output=embed">
     </iframe>
      
@@ -55,10 +55,10 @@
         <h3><img class="icon" src="/icon/link.png" alt="link">Connect with me</h3>
         <small>Follow me for updates, artwork</small>
         <div class="icons big">
-          <img src="/icon/linkdin.png" alt="linkdin" />
-          <img src="/icon/insta.png" alt="instagram" />
-          <img src="/icon/discord.png" alt="discord"/>
-          <img src="/icon/github2.png" alt="github" />
+          <img src="/icon/linkdin.png" alt="linkdin link" />
+          <img src="/icon/insta.png" alt="instagram link" />
+          <img src="/icon/discord.png" alt="discord link"/>
+          <img src="/icon/github2.png" alt="github link" />
         </div>
       </div>
     </div>
@@ -178,6 +178,11 @@
     padding: 10px 18px;
     border-radius: 10px;
     cursor: pointer;
+    transform: 0.3s;
+  }
+  button:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
   }
 
   .icons {
@@ -191,6 +196,11 @@
     width: 30px;
     height: 30px;
     object-fit: contain;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .icons img:hover {
+    transform: scale(1.15);
   }
   .icon {
     width: 60px;
@@ -206,6 +216,8 @@
     width: 45px;
     height: 45px;
   }
+
+   /* Responsive design */
   @media (max-width: 768px) {
   .contact-box {
     grid-template-columns: 1fr;
