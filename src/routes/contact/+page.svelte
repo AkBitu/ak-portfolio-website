@@ -206,5 +206,22 @@
     width: 45px;
     height: 45px;
   }
-  
+  @media (max-width: 768px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .middle h1 {
+    font-size: 38px;
+  }
+
+  .map {
+    max-width: 100%;
+  }
+}
 </style>

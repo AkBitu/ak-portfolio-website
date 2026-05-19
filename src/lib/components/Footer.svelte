@@ -3,11 +3,13 @@
 </footer>
 <style>
 footer {
+    width: 100%;
     background:#af8e96;
     color:rgb(5, 5, 5);
     text-align: center;
-    padding: 15px;
-    margin-top: 60px;
+    padding: 20px;
+    margin-top: 40px;
+    position: static;
 }
 p{
     margin-top: 25px;
@@ -16,4 +18,5 @@ p{
 span {
     font-weight: bold;
 }
+
 </style>

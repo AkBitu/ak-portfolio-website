@@ -1,7 +1,13 @@
 <script>
-let path =window.location.pathname;
+let path = window.location.pathname;
+let menuOpen = false;
 </script>
-<nav>
+
+<button class="hamburger" on:click={() => menuOpen = !menuOpen}>
+  <img src="/icon/menu.png" width="40px" alt="menu">
+</button>
+
+<nav class:show={menuOpen}> 
   <a href="/about" class:active={path === '/about'}>ABOUT ME</a>
   <a href="traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
   
@@ -91,5 +97,43 @@ let path =window.location.pathname;
     background:#857b84;
     color: white;
   }
+/* hamburger menu*/
+.hamburger {
+  display: none;
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #4b2f5e;
+  margin: 10px;
+}
 
+/*responsive page*/
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  nav a {
+    width: 90%;
+    text-align: center;
+  }
+}
 </style>

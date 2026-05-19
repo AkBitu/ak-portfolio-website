@@ -193,6 +193,26 @@
     margin-right: 10px;
   }
 
+   /* Responsive design */
+@media (max-width: 768px) {
+  .cv-box {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .cv-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .profile-card {
+    width: 100%;
+  }
+
+  .cv-content h1 {
+    font-size: 34px;
+  }
+}
 </style>
 
   

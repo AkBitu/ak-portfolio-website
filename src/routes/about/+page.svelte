@@ -78,16 +78,18 @@
     min-height: 100vh;
     padding-top: 20px;
     background: #fae1f9;
+    padding-bottom: 80px;
   }
 
   .about-box {
     max-width: 1050px;
     margin: 0px auto;
-    padding: 36px;
+    padding : 35px;
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 45px;
     align-items: center;
+    
 
     background: rgba(150, 130, 145, 0.55);
     border-radius: 10px;
@@ -169,4 +171,28 @@
     text-align: left;
 
   }
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 20px;
+    }
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    
+  }
+
+  .right {
+    text-align: left;
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+  
+}/* Responsive design */
+
 </style>

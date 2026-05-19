@@ -301,6 +301,43 @@ object-fit: cover;
   border:1px solid #58c7c2;
  }
 
-  
+  /* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .hero,
+  .about-box,
+  .cv-box,
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gallery,
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero img,
+  .profile,
+  .card img,
+  .map {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
   
 </style>
