@@ -4,12 +4,13 @@ let path =window.location.pathname;
 <nav>
   <a href="/about" class:active={path === '/about'}>ABOUT ME</a>
   <a href="traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
-
+  
   <a href="/" class="logo">
     <img src="/logo.png" alt="logo">
   </a>
 
-  <a href="digital">DIGITAL PORTFOLIO</a>
+ <a href="digital" class:active={path === '/digital'}>DIGITAL PORTFOLIO</a>
+  
   <a href="cv">CV</a>
   <a href="contact" class="contact-btn">CONTACT</a>
 </nav>

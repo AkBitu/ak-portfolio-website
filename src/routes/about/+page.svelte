@@ -65,18 +65,18 @@
 <style>
 :global(body) {
   margin:0;
-  padding: 0;
+  padding: 0px;
 }
 :global(main) {
   margin:0;
-  padding:0;
+  padding:0px;
   
 }
   .about-page {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     min-height: 100vh;
-    padding-top: 0px;
+    padding-top: 20px;
     background: #fae1f9;
   }
 
@@ -90,7 +90,7 @@
     align-items: center;
 
     background: rgba(150, 130, 145, 0.55);
-    border-radius: 2px;
+    border-radius: 10px;
   }
 
   .left {
