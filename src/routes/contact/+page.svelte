@@ -1,6 +1,23 @@
 <script>
   import Header from '../../lib/components/Header.svelte';
   import Footer from '../../lib/components/Footer.svelte';
+
+  let sent = false;
+  let name ='';
+  let email ='';
+  let subject ='';
+  let message ='';
+  let error = false;
+
+  function sendMessage() {
+    if (name && email && subject && message) {
+    sent =true;
+    } else {
+        alert("please fill in all fields.");
+    }
+    
+    error=false;
+  }
 </script>
 
 <Header />
@@ -42,13 +59,20 @@
     <div class="right">
       <form class="message-box">
         <h3>📩 Send a Message</h3>
+        <level> Your Name</level>
         <div class="row">
-          <input placeholder="Your Name" />
-          <input placeholder="Your Email" />
+          <input bind:value={name} required placeholder="Your Name" />
+          <input bind:value={email} type="email" required placeholder="Your Email" />
         </div>
-        <input placeholder="Subject" />
-        <textarea placeholder="Message"></textarea>
-        <button type="button"> 💬Send Message</button>
+        <level> Subject</level>
+        <input bind:value={subject} required placeholder="Subject" />
+
+        <level>Message</level>
+        <textarea bind:value={message} required placeholder="Message"></textarea>
+        <button type="button" on:click={sendMessage}> 💬Send Message</button>
+        {#if sent}
+        <p class="success">Thanks! Your message has been sent.</p>
+        {/if}
       </form>
 
       <div class="connect">
@@ -215,6 +239,20 @@
   .big img {
     width: 45px;
     height: 45px;
+  }
+  level {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  .message-box{
+    text-align: left;
+  }
+  .success {
+    color:green;
+    margin-top: 10px;
+    font-weight: bold;
   }
 
    /* Responsive design */
