@@ -2,11 +2,12 @@
   import Header from '../../lib/components/Header.svelte';
   import Footer from '../../lib/components/Footer.svelte';
 </script>
-
+<!-- about page header-->
 <Header />
-
+<!--about me content section-->
 <section class="about-page">
   <div class="about-box">
+  <!--profile image and social links-->
     <div class="left">
       <img class="profile" src="/exhibition.jpg" alt="Ak Bitu exhibition " />
 
@@ -30,7 +31,7 @@
 
       <button class="cv">📩 Download CV </button>
     </div>
-
+<!--about text content-->
     <div class="right">
       <h1>About Me</h1>
 
@@ -72,6 +73,7 @@
   padding:0px;
   
 }
+/*about page layout*/
   .about-page {
     margin: 0;
     padding: 20px;
@@ -114,6 +116,7 @@
     margin: 18px 0;
     align-items: center;
   }
+  /*social icon hover effects*/
   .icons img{
     height: 24px;
     width:24px;

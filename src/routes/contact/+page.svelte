@@ -19,12 +19,13 @@
     error=false;
   }
 </script>
-
+<!--contact page header-->
 <Header />
-
+<!--contact page main content-->
 <section class="contact-page">
   <div class="contact-box">
 
+    <!--profile contact card-->
     <div class="profile-card">
       <img src="/profile.jpg" alt="Ak Bitu profile pic" />
       <h2>Ak Bitu</h2>
@@ -57,6 +58,7 @@
     </div>
 
     <div class="right">
+    <!--contact form-->
       <form class="message-box">
         <h3>📩 Send a Message</h3>
         <level> Your Name</level>
@@ -70,6 +72,7 @@
         <level>Message</level>
         <textarea bind:value={message} required placeholder="Message"></textarea>
         <button type="button" on:click={sendMessage}> 💬Send Message</button>
+        <!--success feedback message-->
         {#if sent}
         <p class="success">Thanks! Your message has been sent.</p>
         {/if}
@@ -93,6 +96,7 @@
 <Footer />
 
 <style>
+/* contact page layout*/
   .contact-page {
     background: #f5edf2;
     padding: 20px;
@@ -168,7 +172,7 @@
     border-radius: 12px;
     border:none;
   }
-
+/* form styling*/
   .message-box {
     background: #f9e8ef;
     padding: 20px;
@@ -194,7 +198,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-
+/* button hover effects*/
   button {
     background: #4aac93;
     color: white;
@@ -254,6 +258,15 @@
     margin-top: 10px;
     font-weight: bold;
   }
+  /* Keyboard accessibility focus style */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #4aac93;
+  outline-offset:  3px;
+}
+
 
    /* Responsive design */
   @media (max-width: 768px) {

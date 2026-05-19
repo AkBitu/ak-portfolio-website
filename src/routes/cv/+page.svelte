@@ -3,11 +3,12 @@
   import Footer from '../../lib/components/Footer.svelte';
 
 </script>
-
+<!--CV page header-->
 <Header />
-
+<!--CV main layout-->
 <section class="cv-page">
  <div class="cv-box">
+ <!--profile summery card-->
    <div class="profile-card">
      <img src="/profile.jpg" alt="Ak Bitu profile pic">
       <h2> <b> Ak Bitu </b></h2>
@@ -18,7 +19,7 @@
       <p class="contact">C00313310@setu.ie<br />SETU Carlow Campus</p>
       <button>📩 Download CV </button>
     </div>
-
+<!--education and experience content-->
      <div class="cv-content">
       <h1><b>Curriculum Vitae</b></h1>
 
@@ -70,6 +71,7 @@
 <Footer />
 
 <style>
+/* CV layout*/
   .cv-page {
     background: #f5edf2;
     padding: 20px;

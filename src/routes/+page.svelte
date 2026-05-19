@@ -46,10 +46,11 @@ import { onMount } from 'svelte';
   });
 
 </script>
-
+<!--Header Navigation-->
 <Header />
-
+<!--main homepage content-->
 <main class="home">
+<!--banner slideshow-->
   <section class="hero">
   <button class="arrow" on:click={previousSlide}>&lt;</button>
   
@@ -81,7 +82,7 @@ import { onMount } from 'svelte';
 <button class="arrow" on:click={nextSlide}>&gt;</button> 
   
   </section>
-
+<!--featured project cards-->
   <section class="features">
     <h2>Feature Work</h2>
 
@@ -89,8 +90,8 @@ import { onMount } from 'svelte';
 
       <div class="card">
       <div class="card-images two-images">
-      <img src="/animation_1.gif" alt="Animation 1">
-      <img src="/animation_2.jpg" alt="Animation 2">
+      <img src="/animation_1.gif" alt="Animation 1 gif">
+      <img src="/animation_2.jpg" alt="Animation 2 concept">
       </div>
 
       <div class="card-content">
@@ -101,7 +102,7 @@ import { onMount } from 'svelte';
 
       <div class="card">
        <div class="card-images">
-      <img src="/environment.png" alt="environment">
+      <img src="/environment.png" alt="environment artwork">
        </div>
       <div class="card-content">
         <h3>Environment</h3>
@@ -111,7 +112,7 @@ import { onMount } from 'svelte';
 
       <div class="card">
       <div class="card-images">
-      <img src="/3d.jpg" alt="3d">
+      <img src="/3d.jpg" alt="3d artwork">
        </div>
   
       <div class="card-content">
@@ -132,7 +133,7 @@ import { onMount } from 'svelte';
     background:#fae1f9;
     
   }
-
+/* hero section styling */
   .hero {
     display:flex;
     justify-content: space-between;
@@ -189,12 +190,14 @@ import { onMount } from 'svelte';
   text-align:center;
   margin-top: 60px;
  }
+ /* feature cards styling */
  .features h2{
   font-size: 36px;
   font-family: Georgia, serif;
     font-style: italic;
     color: #5a3d6b;
  }
+ 
  .cards {
   display: flex;
   justify-content:center;

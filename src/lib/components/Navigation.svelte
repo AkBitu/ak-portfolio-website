@@ -3,16 +3,18 @@ let path = window.location.pathname;
 let menuOpen = false;
 </script>
 
+<!--mobile hamburger menu-->
 <button class="hamburger" on:click={() => menuOpen = !menuOpen}>
   <img src="/icon/menu.png" width="40px" alt="menu">
 </button>
 
+<!--main navigation links-->
 <nav class:show={menuOpen}> 
   <a href="/about" class:active={path === '/about'}>ABOUT ME</a>
   <a href="traditional" class:active={path === '/traditional'}>TRADITIONAL PORTFOLIO</a>
   
   <a href="/" class="logo">
-    <img src="/logo.png" alt="logo">
+    <img src="/logo.png" alt="Ak Bitu Portfolio logo">
   </a>
 
  <a href="digital" class:active={path === '/digital'}>DIGITAL PORTFOLIO</a>
@@ -97,7 +99,7 @@ let menuOpen = false;
     background:#857b84;
     color: white;
   }
-/* hamburger menu*/
+/* mobile hamburger menu*/
 .hamburger {
   display: none;
   font-size: 28px;
@@ -106,6 +108,14 @@ let menuOpen = false;
   cursor: pointer;
   color: #4b2f5e;
   margin: 10px;
+}
+/* Keyboard accessibility focus style */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #4aac93;
+  outline-offset:  3px;
 }
 
 /*responsive page*/

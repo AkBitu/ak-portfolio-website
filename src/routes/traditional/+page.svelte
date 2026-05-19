@@ -17,14 +17,15 @@
     }
   ];
 </script>
-
+<!--Portfolio page header-->
 <Header />
-
+<!--portfolio gallery section-->
 <section class="traditional-page">
   <div class="portfolio-box">
     <h1>Traditional Portfolio</h1>
 
     <div class="gallery">
+    <!--project cards-->
       {#each works as work}
         <div class="card">
           <img src={work.image} alt={work.title} />
@@ -70,7 +71,7 @@
     gap: 20px;
     flex-wrap: wrap;
   }
-
+/* portfolio card styling */
   .card {
     background: white;
     width: 280px;
@@ -80,7 +81,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s;
   }
-
+/* card hover efect */
   .card:hover {
     transform: scale(1.05);
   }
